@@ -12,15 +12,15 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.classic.svg
-          committer_token: ${{ secrets.METRICS_TOKEN }}
-          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.token }}
+          token: ${{ secrets.token }}
           base: header, repositories
           plugin_lines: yes
   snk:
     needs: [metrics]
     runs-on: ubuntu-latest
     env:
-      GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.token }}
     steps:
       - name: Setup Information
         run: |
@@ -29,7 +29,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3.6.0
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.token }}
       - name: Update SNK
         uses: Platane/snk@v3
         with:
