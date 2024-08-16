@@ -24,8 +24,8 @@ jobs:
     steps:
       - name: Setup Information
         run: |
-          git config --global user.email Fgaoxing0206@163.com
-          git config --global user.name Fgaoxing
+          git config --global user.email idoingno@163.com
+          git config --global user.name idoingno
       - name: Checkout
         uses: actions/checkout@v3.6.0
         with:
