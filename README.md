@@ -4,7 +4,3 @@
   <img src="https://github.com/Fgaoxing/Fgaoxing/raw/main/github-snake.svg">
 </picture>
 
-
-### [设计类网站](https://tympanus.net)
-
-### [左右列表布局](https://tympanus.net/Blueprints/SplitLayout/)
